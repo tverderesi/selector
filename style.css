@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+.w-40 {
+  width: 40%;
+}
+
+/* div.blue { color: #0b4f84;
+} */
+
+
+.button:active {
+  background-color: black;
+  border: none;
+  color: white;
+}
+
+#upload-input::before {
+  content: "Escolha um Arquivo";
+  position: absolute;
+  z-index: 2;
+  display: block;
+  background-color: #eee;
+  width: 80px;
+}
+
+#step-one div.display-3,
+#step-two div.display-3 {
+  font-weight: bold !important;
+  color: white;
+}
+
+
+
+.mt-10 {
+  margin-top: 10vh;
+
+}
+
+.mb-50 {
+  margin-bottom: 50vh;
+}
+
+.bg-info {
+  background-color: #1a9cdf !important;
+}
+
+.btn-primary {
+  background-color: #0b4f84 !important;
+  border-color: #0b4f84 !important;
+}
+
+.btn-secondary {
+  background-color: #dde0e3 !important;
+  color: black;
+  border-color: #ced4da !important;
+}
