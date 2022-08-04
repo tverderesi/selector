@@ -49,7 +49,6 @@ $(document).ready(function () {
     $("#brute-data").toggleClass("d-none");
     let btn_text = $("#show-table").text();
     if (~btn_text.indexOf("Visualizar")) {
-      console.log("oi");
       $("#show-table").text("Esconder tabela");
     }
     if (~btn_text.indexOf("Esconder")) {
@@ -74,7 +73,7 @@ $(document).ready(function () {
       tutor_id++;
       tutor_list.push(tutor);
       tutors = tutor_list;
-      console.log(tutor_list);
+
       $("#tutor-table").append(`<tr class="font-weight-bold">
   <td scope="row">${tutor_id}</td>
   <td>${tutor}</td>
