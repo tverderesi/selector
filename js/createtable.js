@@ -12,10 +12,10 @@ function CreateTable(table_data, tutor_data, table_html) {
     <div class="row  py-2 text-center">
         <div class="col fw-bold text-end align-self-center">Comece a corrigir em</div>
         <div class="col fw-semibold text-center align-self-center">${
-          table_data[1 + tutor * assignment_tutor][0]
+          table_data[1 + tutor * assignment_tutor][1]
         }</div>
         <div class="col-3 fw-semibold text-center align-self-center">${
-          table_data[1 + tutor * assignment_tutor][1]
+          table_data[1 + tutor * assignment_tutor][0]
         }</div>
     </div>`);
 
@@ -23,18 +23,18 @@ function CreateTable(table_data, tutor_data, table_html) {
       $(table_html).append(`
     <div class="row py-2 text-center border-bottom justify-self-center">
         <div class="col fw-bold text-end justify-self-center">Pare de Corrigir em</div>
-        <div class="col fw-semibold text-center align-self-center">${table_data[students][0]}</div>
-        <div class="col-3 fw-semibold text-center align-self-center">${table_data[students][1]}</div>
+        <div class="col fw-semibold text-center align-self-center">${table_data[students][1]}</div>
+        <div class="col-3 fw-semibold text-center align-self-center">${table_data[students][0]}</div>
     </div>`);
     } else {
       $(table_html).append(`
     <div class="row py-2 text-center border-bottom justify-self-center">
         <div class="col fw-bold text-end justify-self-center">Pare de Corrigir em</div>
         <div class="col fw-semibold text-center align-self-center">${
-          table_data[(tutor + 1) * assignment_tutor][0]
+          table_data[(tutor + 1) * assignment_tutor][1]
         }</div>
         <div class="col-3 fw-semibold text-center align-self-center">${
-          table_data[(tutor + 1) * assignment_tutor][1]
+          table_data[(tutor + 1) * assignment_tutor][0]
         }</div>
     </div>`);
     }
